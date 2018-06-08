@@ -1,0 +1,7 @@
+[CREATE]
+task_text="Dostante sa do adresara {path-1}. Vypiste na standardny vystup cestu k aktualnemu adresaru, v ktorom sa nachadzate."
+path-1.make="yes"
+path-1.max_level="4"
+path-1.min_level="2"
+[EVALUATE]
+path-1.command="pwd"

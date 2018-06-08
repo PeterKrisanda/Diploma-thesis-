@@ -1,0 +1,9 @@
+[CREATE]
+task_text="Vymazte adresar {directory-1}, ktory sa nachadza v adresari {path-1}"
+path-1.make="yes"
+path-1.max_level="3"
+path-1.min_level="1"
+directory-1.make="yes"
+directory-1.locate_in="path-1"
+[EVALUATE]
+directory-1.not_exist_in="path-1"

@@ -1,0 +1,10 @@
+[CREATE]
+task_text="Zmente pristupove prava suboru {file-1}, nachadzajucom sa v adresari {path-1}, na prava {rights-1}."
+path-1.make="yes"
+path-1.max_level="2"  
+path-1.min_level="1"
+file-1.make="yes"
+file-1.locate_in="path-1"
+rights-1.random_rights="yes"
+[EVALUATE]
+file-1.have_rights="rights-1"

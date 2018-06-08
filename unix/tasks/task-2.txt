@@ -1,0 +1,8 @@
+[CREATE]
+task_text="Vypiste pocet znakov v subore {file-1}, nachadzajucom sa v adresari {path-1}. Pouzite prikaz wc z prislusnym prepinacom. Prikaz pouzite zo svojho domovskeho adresara. Pouzite relativnu cestu."
+path-1.make="yes"
+path-1.level="0"
+file-1.make="yes"
+file-1.locate_in="path-1"
+[EVALUATE]
+home.command="wc -c {path-1}{file-1}"

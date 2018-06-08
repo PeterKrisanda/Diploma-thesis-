@@ -1,0 +1,11 @@
+[CREATE]
+task_text="Premenujte adresar {directory-1} na {directory-2}, ktory sa nachádza v {path-1}."
+path-1.make="yes"
+path-1.level="1"
+directory-1.make="yes"
+directory-1.locate_in="path-1"
+directory-2.make="no"
+directory-2.locate_in="path-1"
+[EVALUATE]
+directory-1.not_exist_in="path-1"
+directory-2.exist_in="path-1"

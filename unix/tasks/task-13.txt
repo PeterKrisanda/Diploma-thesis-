@@ -1,0 +1,12 @@
+[CREATE]
+task_text="Presunte subor {file-1} nachadzajuci sa v adresari {path-2} do adresara {path-1}."
+path-1.make="yes"
+path-1.level="1"
+path-2.make="yes"
+path-2.level="2"
+file-1.make="yes"
+file-1.locate_in="path-2"
+[EVALUATE]
+file-1.exist_in="path-1"
+file-1.not_exist_in="path-2"
+file-1.compare="file-1"

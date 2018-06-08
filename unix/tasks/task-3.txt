@@ -1,0 +1,14 @@
+[CREATE]
+task_text="Porovnajte obsah suborov {file-1}, ktory sa nachadza v adresari {path-1} a subor {file-2}, ktory sa nachadza v adresari {path-2}. Pouzite zakladny prikaz bez prepinacov a pouzite absolutne cesty z adresara home. Ako prvy parameter pouzite subor {file-1}."
+path-1.make="yes"
+path-1.max_level="2"
+path-1.min_level="1"
+path-2.make="yes"
+path-2.max_level="2"
+path-2.min_level="1"
+file-1.make="yes"
+file-1.locate_in="path-1"
+file-2.make="yes"
+file-2.locate_in="path-2"
+[EVALUATE]
+no_path.command="cmp {absolute}{path-1}{file-1} {absolute}{path-2}{file-2}"

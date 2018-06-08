@@ -1,0 +1,17 @@
+[CREATE]
+task_text="Skopirujte obsah suboru {file-1} nachadzajuci sa v adresari {path-1}, do suboru {file-2}, ktory sa nachadza v adresari {path-2}. Subor {file-2} prepiste."
+path-1.make="yes"
+path-1.max_level="2"
+path-1.min_level="1"
+path-2.make="yes"
+path-2.max_level="3"
+path-2.min_level="2"
+file-1.make="yes"
+file-1.locate_in="path-1"
+file-2.make="yes"
+file-2.locate_in="path-2"
+[EVALUATE]
+file-1.exist_in="path-1"
+file-2.exist_in="path-2"
+file-2.compare="file-1"
+file-1.compare="file-1"

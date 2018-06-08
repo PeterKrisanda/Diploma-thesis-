@@ -1,0 +1,9 @@
+[CREATE]
+task_text="Vytvorte adresar {directory-1}, v adresari {path-1}."
+path-1.make="yes"
+path-1.max_level="2"
+path-1.min_level="1"
+directory-1.make="no"
+directory.locate_in="path-1"
+[EVALUATE]
+directory-1.exist_in="path-1"

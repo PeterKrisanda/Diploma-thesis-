@@ -1,0 +1,10 @@
+[CREATE]
+task_text="Vypis poctu riadkov suboru {file-1} nachadzajucom sa v adresari {path-1} pomocou prikazu wc z prislusnym prepinacom presmerujte pouzitim operatora presmerovania do suboru {file-2}. Pozite operator na prepisanie suboru a nepozite v operatore cisla. Prikaz pouzite zo svojho domovskeho adresara."
+path-1.make="yes"
+path-1.level="0"
+file-1.make="yes"
+file-1.locate_in="path-1"
+file-2.make="yes"
+file-2.locate_in="path-1"
+[EVALUATE]
+home.command="wc -l {file-1} > {file-2}"
